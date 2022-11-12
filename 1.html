@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>变量提升</title>
+    <script>
+      console.log(a);
+      console.log(b);
+      var b = 100;
+      console.log(b);
+      f1();
+      function f1() {
+        console.log(num);
+        var num = 200;
+        console.log(num);
+        console.log("f1 function");
+      }
+    </script>
+  </head>
+  <body></body>
+  <html></html>
+</html>

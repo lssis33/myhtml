@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*      .box {
+        position: relative;
+        background-color: aqua;
+        width: 400px;
+        height: 40px;
+        margin: 60px auto;
+        border-bottom: 5px solid gainsboro;
+      }
+      #pwd {
+        position: absolute;
+        float: left;
+        top: 15px;
+      }
+      #swi {
+        float: right;
+        height: 30px;
+        width: 30px;
+        background-color: #fff;
+      } */
+      .box {
+        position: relative;
+        height: 40px;
+        width: 350px;
+        margin: 60px auto;
+        border-bottom: 2px solid gainsboro;
+      }
+
+      .box img {
+        position: absolute;
+        width: 28px;
+        height: 25px;
+        right: 3px;
+        bottom: 3px;
+      }
+
+      .box input {
+        position: absolute;
+        width: 300px;
+        height: 15px;
+        border: 0;
+        left: 2px;
+        bottom: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div class="box">
+      <label for="kk">
+        <img src="close.png" alt="" id="swi" />
+      </label>
+      <input type="password" id="pwd" />
+    </div> -->
+    <div class="box">
+      <input type="password" id="pwd" name="kkk" />
+      <label for="kkk">
+        <img src="close.png" alt="" id="eye" />
+      </label>
+    </div>
+
+    <script>
+      var eye = document.getElementById("eye");
+      var pwd = document.getElementById("pwd");
+      var flag = 0;
+      eye.onclick = function () {
+        if (flag == 0) {
+          pwd.type = "text";
+          eye.src = "open.png";
+          flag = 1; // 赋值操作
+        } else {
+          pwd.type = "password";
+          eye.src = "close.png";
+          flag = 0;
+        }
+      };
+    </script>
+  </body>
+</html>

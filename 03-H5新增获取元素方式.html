@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">盒子1</div>
+    <div class="box">盒子2</div>
+    <div id="nav">
+      <ul>
+        <li>首页</li>
+        <li>产品</li>
+      </ul>
+    </div>
+
+    <script>
+      //1\getElementByClassName
+      /*    var boxs = document.getElementsByClassName("box");
+      console.log(boxs); */
+      //2\querySelctor
+      var firstBox = document.querySelector(".box");
+      console.log(firstBox);
+      var firstLi = document.querySelector("#nav");
+      console.log(firstLi);
+    </script>
+  </body>
+</html>
